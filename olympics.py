@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd 
 import pydeck as pdk 
 import matplotlib.pyplot as plt
-from plotly import tools
 import seaborn as sns
 import altair as alt
 from vega_datasets import data
