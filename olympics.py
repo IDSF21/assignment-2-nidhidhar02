@@ -24,6 +24,8 @@ total_medal_count = load_data('total_medal_count_with_lat_and_long.csv')
 total_medal_count.set_index('Country Code', inplace = True)
 total_medal_count['id'] = country_codes['Numeric']
 
+#Citation: I referred to the following blogpost https://towardsdatascience.com/turn-your-python-script-into-a-web-app-using-streamlit-and-altair-627c70c56f4, to undestand
+#how Altair could be used to plot the distribution of medals across countries, on the world map.
 def draw_map(input_option='Total'):
     
     colors = {'Total':"lightgreyred",
